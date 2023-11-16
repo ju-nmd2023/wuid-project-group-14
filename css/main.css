@@ -6,11 +6,12 @@ header {
     padding: 2em, 2em;
     margin: 0 0 0 0;
     justify-content: space-between;
+    font-family: sans-serif;
 }
 
 h3, h4, h5, h6 {
     color: #787878;
-    font-weight: 600;
+    font-weight: 16px;
     line-height: 1em;
     margin: 0 0 1em 0;
 }
