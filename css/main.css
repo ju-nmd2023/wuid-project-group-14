@@ -1,0 +1,9 @@
+header {
+    display: block;
+    font-size: 2.5em;
+    text-align: left;
+    color: #b59966;
+    padding: 2em, 2em;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+}
