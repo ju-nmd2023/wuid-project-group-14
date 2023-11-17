@@ -1,3 +1,4 @@
+
 header {
     display: block;
     font-size: 2.5em;
@@ -14,4 +15,26 @@ h3, h4, h5, h6 {
     font-weight: 16px;
     line-height: 1em;
     margin: 0 0 1em 0;
+}
+
+.welcome-style{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.section-about {
+    background-color: #E2DCD5;
+}
+
+.image-logo{
+    width: 30%;
+}
+
+.image-product {
+    width: 30%;
+
+}
+
+.our-products{
+    
 }
