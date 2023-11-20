@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Details Page</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/detailpage.css">
+  <script src="javascript/slideshow.js"></script>
+</head>
+<body onload="initialSlide()">
+  <main>
+    <div class="grid-container">
+      <section>
+        <div class="slideshow-container">
+          <div class="slide">
+            <img src="images/coffeebeans1.webp" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="images/coffeebeans2.webp" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="images/coffeebeans3.webp" alt="Image 3">
+          </div>
+          <div class="slide">
+            <img src="images/coffeebeans4.png" alt="Image 4">
+          </div>
+          <p class="previous-slide-button" onclick="changeSlide(-1)"><b>&lt</b></p>
+          <p class="next-slide-button" onclick="changeSlide(1)"><b>&gt</b></p>
+          <div class="slide-dots-container">
+            <span class="slide-dot" onclick="displayDotSlide(1)"></span>
+            <span class="slide-dot" onclick="displayDotSlide(2)"></span>
+            <span class="slide-dot" onclick="displayDotSlide(3)"></span>
+            <span class="slide-dot" onclick="displayDotSlide(4)"></span>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="product-details-container">
+          <div>
+            <h1 class="product-name">Name of coffee beans</h1>
+            <h2 class="product-origin">Origin of coffee beans</h2>
+            <h3 class="product-price">Price</h3>
+          </div>
+          <div>
+            <button class="product-option-button">Option 1</button>
+            <button class="product-option-button">Option 2</button>
+          </div>
+          <div>
+            <button class="cart-button">Add to cart</button>
+          </div>
+          <div>
+            <p class="product-info">Information about the coffee beans</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
 </html>
