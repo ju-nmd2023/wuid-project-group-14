@@ -3,7 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Payment Process</title>
+    <link rel="stylesheet" href="css/payment.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Terra Header -->
+    <header></header>
+    <div class="grid-container">
+      <section>
+        <div class="details-container">
+          <section>
+            <div class="delivery-details">
+              <h1>Delivery</h1>
+              <div class="delivery-container">
+                <first_name>First Name</first_name>
+                <last_name>Last Name</last_name>
+                <email>Email</email>
+                <region_code>Region Code</region_code>
+                <phone_number>Phone Number</phone_number>
+                <country>Country</country>
+                <city>City</city>
+                <addresses>Address</addresses>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="payment-details">
+              <h1>Payment</h1>
+              <div class="payment-container">
+                <!-- Credit Card -->
+                <button class="round_button">.</button>
+                <p>Credit Card</p>
+                <!-- images of Visa Mastercard and AmericanExpress -->
+                <div id="credit_card_container">
+                  <card_number> Card Number </card_number>
+                  <expiration> Expiration Date (MM/YY) </expiration>
+                  <security_code> Security Code </security_code>
+                  <name_on_card> Name on Card </name_on_card>
+                </div>
+                <!-- Apple Pay -->
+                <apple_pay>
+                  <button class="round_button">.</button>
+                  <p>Apple Pay</p>
+                  <!-- image of Apple Pay -->
+                </apple_pay>
+                <!-- Google Pay -->
+                <google_pay>
+                  <button class="round_button">.</button>
+                  <p>Google Pay</p>
+                  <!-- image of Google Pay -->
+                </google_pay>
+              </div>
+            </div>
+            <!-- Pay Now Button -->
+            <button class="pay-now-button">Pay Now</button>
+          </section>
+        </div>
+      </section>
+      <section>
+        <h1>Products</h1>
+        <div class="products-container">
+          <div class="product-info">
+            <img
+              src="./images/coffeebeans1.webp"
+              alt="House Expresso"
+              class="product-picture"
+            />
+            <div class="product-detail">
+              <h2 class="product-name">House Expresso</h2>
+              <div class="product-number-and-price">
+                <h3 class="product-number">250g * 2</h3>
+                <h3 class="product-price">398,00 SEK</h3>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <img
+              src="./images/machine2.jpeg"
+              alt="Thera Advance"
+              class="product-picture"
+            />
+            <div class="product-detail">
+              <h2 class="product-name">Thera Advance</h2>
+              <div class="product-number-and-price">
+                <h3 class="product-number">1</h3>
+                <h3 class="product-price">3 599,00 SEK</h3>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <img
+              src="./images/mug1.png"
+              alt="Timeless White Mugs"
+              class="product-picture"
+            />
+            <div class="product-detail">
+              <h2 class="product-name">Timeless White Mugs</h2>
+              <div class="product-number-and-price">
+                <h3 class="product-number">1</h3>
+                <h3 class="product-price">79,00 SEK</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
