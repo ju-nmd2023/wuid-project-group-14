@@ -1,195 +1,197 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
 /* Header */
 header {
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    text-align: left;
-    font-family: 'Noto Sans';
-    color: #fff;
-    font-style: normal;
-    font-weight: 400;
-    margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: left;
+  font-family: "Noto Sans";
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0 0 0 0;
 }
 
-header h3{
-    color:#FFF;
-    font-family: Noto Sans;
-    font-size: 28px;
-    font-weight: 500;
-    line-height: normal;
+header h3 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.button-buy{
-    font-size: 18px;
-    text-align: center; 
-    display: flex;
-    padding: 0.5em 1em;
-    color: #FFF;
-    background-color: transparent;
-    text-decoration: none;
-    border: 2px solid #FFF;
-    cursor: pointer;
+.button-buy {
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  padding: 0.5em 1em;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  border: 2px solid #fff;
+  cursor: pointer;
 }
 
-.button-buy:hover{
-    text-decoration: none;
-    border-color: #c0a470;
-    color: #c0a470;
+.button-buy:hover {
+  text-decoration: none;
+  border-color: #c0a470;
+  color: #c0a470;
 }
 
-h3, h4, h5, h6 {
-    color: #787878;
-    font-weight: 16px;
-    line-height: 1em;
-    margin: 0 0 1em 0;
+h3,
+h4,
+h5,
+h6 {
+  color: #787878;
+  font-weight: 16px;
+  line-height: 1em;
+  margin: 0 0 1em 0;
 }
 
-.image-logo{
-    width: 20%;
-    float: left;
-    display: block;
-    padding-left: 2px;
+.image-logo {
+  width: 20%;
+  float: left;
+  display: block;
+  padding-left: 2px;
 }
 
-li, a, input{
-    display: block;
-    color: #DED5CB;
-    text-decoration: none;
-    font-family: 'Noto Sans';
-    float: right;
-    padding: 8px;
+li,
+a,
+input {
+  display: block;
+  color: #ded5cb;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  float: right;
+  padding: 8px;
 }
 
-.text{
-    flex: 1 0 0;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.60);
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    color: #fff;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    font-family: 'Noto Sans';
-
+.text {
+  flex: 1 0 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Noto Sans";
 }
 
-.welcome-style{
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background: linear-gradient(180deg, rgba(96, 52, 35, 0.76) 74.48%, rgba(96, 52, 35, 0.00) 97.97%), url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
-
+.welcome-style {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background: linear-gradient(
+      180deg,
+      rgba(96, 52, 35, 0.76) 74.48%,
+      rgba(96, 52, 35, 0) 97.97%
+    ),
+    url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
 }
-
 
 /* About us Section */
-#About-Us{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2vh;
-    background-color: #E2DCD5;
-    
+#About-Us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2vh;
+  background-color: #e2dcd5;
 }
 
-#about-logo{
-    grid-column: 1 / 2;
+#about-logo {
+  grid-column: 1 / 2;
 }
 
-.image-about{
-    width: 45%;
-    float: left;
-    display: flex;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-
+.image-about {
+  width: 45%;
+  float: left;
+  display: flex;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
 }
-#about-subtitle{
-    grid-column: 2 / 3;
-    display: flex;
-    color: #603423;
-    font-family: 'Noto Sans';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.sub-grid2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1vh;
+#about-subtitle {
+  grid-column: 2 / 3;
+  display: flex;
+  color: #603423;
+  font-family: "Noto Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
 }
 
-#about-p1{
-    grid-column: 1 / 2;
-    color: #603423;
-    font-family: 'Noto Sans';
+.sub-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vh;
 }
 
-#about-p2{
-    grid-column: 2 / 3;
-    color: #603423;
-    font-family: 'Noto Sans';
+#about-p1 {
+  grid-column: 1 / 2;
+  color: #603423;
+  font-family: "Noto Sans";
 }
 
-
+#about-p2 {
+  grid-column: 2 / 3;
+  color: #603423;
+  font-family: "Noto Sans";
+}
 
 /* Products Section */
-.products{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3vh;
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vh;
 }
 
-#our-products{
-    color: #603423;
-    font-family: 'Noto Sans';
-    font-size: 16px;
-    font-weight: 700;
-    line-height: normal;  
-    padding: 2rem;
+#our-products {
+  color: #603423;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 2rem;
 }
- 
 
 .image-product {
-    width: 30%;
-    border-radius: 0.35em;
-    display: inline-block;
-    position: relative;
+  width: 30%;
+  border-radius: 0.35em;
+  display: inline-block;
+  position: relative;
 }
 
-.image-product.fit{
-    display: block;
-    margin: 0 0 2em 0;
-    width: 100%;
+.image-product.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
 }
 
 /*Footer*/
-footer{
-    background-color: #DED5CB;
-    font-family: 'Noto Sans';
-    text-align: center;
+footer {
+  background-color: #ded5cb;
+  font-family: "Noto Sans";
+  text-align: center;
 }
 
-.grid-footer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.title-product{
-    padding-left: 2rem;
+.title-product {
+  padding-left: 2rem;
 }
 
-.footer-pics{
-    width: 10%;
-    padding-bottom: 0rem;
+.footer-pics {
+  width: 10%;
+  padding-bottom: 0rem;
 }
 
-.footer-media{
-    width: 5%;
-    padding-left: 0.5rem;
+.footer-media {
+  width: 5%;
+  padding-left: 0.5rem;
 }
