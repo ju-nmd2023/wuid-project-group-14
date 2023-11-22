@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* Header */
 header {
     display: flex;
     flex-direction: column;
@@ -44,28 +46,12 @@ h3, h4, h5, h6 {
     margin: 0 0 1em 0;
 }
 
-.welcome-style{
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background: linear-gradient(180deg, rgba(96, 52, 35, 0.76) 74.48%, rgba(96, 52, 35, 0.00) 97.97%), url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
-    
-}
-
-
-
 .image-logo{
     width: 20%;
     float: left;
     display: block;
     padding-left: 2px;
 }
-
-.image-product {
-    width: 30%;
-    border-radius: 0.35em;
-}
-
-
 
 li, a, input{
     display: block;
@@ -75,8 +61,6 @@ li, a, input{
     float: right;
     padding: 8px;
 }
-
-
 
 .text{
     flex: 1 0 0;
@@ -93,6 +77,15 @@ li, a, input{
 
 }
 
+.welcome-style{
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(96, 52, 35, 0.76) 74.48%, rgba(96, 52, 35, 0.00) 97.97%), url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
+
+}
+
+
+/* About us Section */
 #About-Us{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -104,23 +97,99 @@ li, a, input{
 #about-logo{
     grid-column: 1 / 2;
 }
+
+.image-about{
+    width: 45%;
+    float: left;
+    display: flex;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+
+}
 #about-subtitle{
     grid-column: 2 / 3;
     display: flex;
     color: #603423;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
 }
 
+.sub-grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vh;
+}
+
 #about-p1{
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    color: #603423;
+    font-family: 'Noto Sans';
 }
 
 #about-p2{
-
+    grid-column: 2 / 3;
+    color: #603423;
+    font-family: 'Noto Sans';
 }
 
 
 
+/* Products Section */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vh;
+}
+
+#our-products{
+    color: #603423;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;  
+    padding: 2rem;
+}
+ 
+
+.image-product {
+    width: 30%;
+    border-radius: 0.35em;
+    display: inline-block;
+    position: relative;
+}
+
+.image-product.fit{
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+/*Footer*/
+footer{
+    background-color: #DED5CB;
+    font-family: 'Noto Sans';
+    text-align: center;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.title-product{
+    padding-left: 2rem;
+}
+
+.footer-pics{
+    width: 10%;
+    padding-bottom: 0rem;
+}
+
+.footer-media{
+    width: 5%;
+    padding-left: 0.5rem;
+}
