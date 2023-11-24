@@ -14,16 +14,16 @@
       <section>
         <div class="slideshow-container">
           <div class="slide">
-            <img src="images/coffeebeans1.webp" alt="Image 1">
+            <img class="slideshow-image" src="images/coffeebeans1.webp" alt="Image 1">
           </div>
           <div class="slide">
-            <img src="images/coffeebeans2.webp" alt="Image 2">
+            <img class="slideshow-image" src="images/coffeebeans2.webp" alt="Image 2">
           </div>
           <div class="slide">
-            <img src="images/coffeebeans3.webp" alt="Image 3">
+            <img class="slideshow-image" src="images/coffeebeans3.webp" alt="Image 3">
           </div>
           <div class="slide">
-            <img src="images/coffeebeans4.png" alt="Image 4">
+            <img class="slideshow-image" src="images/coffeebeans4.png" alt="Image 4">
           </div>
           <p class="previous-slide-button" onclick="changeSlide(-1)"><b>&lt</b></p>
           <p class="next-slide-button" onclick="changeSlide(1)"><b>&gt</b></p>
@@ -43,11 +43,39 @@
             <h3 class="product-price">Price</h3>
           </div>
           <div>
-            <button class="product-option-button">Option 1</button>
-            <button class="product-option-button">Option 2</button>
+            <button class="product-option-button1">Option 1</button>
+            <button class="product-option-button2">Option 2</button>
+            <button class="cart-button">Add to cart</button>
           </div>
           <div>
-            <button class="cart-button">Add to cart</button>
+            <div class="modal-container hidden">
+              <h1 class="cart-title">Your Cart</h1>
+              <span class="close-cart-button">&times;</span>
+              <div class="cart-products-container">
+                <section class="cart-section-image">
+                  <img class="cart-product-image" src="images/coffeebeans1.webp">
+                </section>
+                <section class="cart-section-product-details">
+                  <div>
+                    <h1 class="cart-product-name">Name of coffee beans</h1>
+                    <h2 class="cart-product-option">Origin of coffee beans</h2>
+                  </div>
+                  <div style="display: flex;">
+                    <div class="product-counter-container">
+                      <span class="remove">-</span>
+                      <input type="number" class="product-counter-amount" value="1">
+                      <span class="add">+</span>
+                    </div>
+                    <h3 class="cart-product-price">Price</h3>
+                  </div>
+                </section>
+              </div>
+              <div class="cart-footer-container">
+                <h2 class="cart-subtotal">Subtotal</h2>
+                <button class="checkout-button">Checkout</button>
+              </div>
+            </div>
+            <div class="overlay hidden"></div>
           </div>
           <div>
             <p class="product-info">Information about the coffee beans</p>
@@ -56,5 +84,7 @@
       </section>
     </div>
   </main>
+  <script src="javascript/cart.js"></script>
+  <script src="javascript/productCounter.js"></script>
 </body>
 </html>
