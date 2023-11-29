@@ -8,7 +8,16 @@
   </head>
   <body>
     <!-- Terra Header -->
-    <header></header>
+    <a href="index.html">
+      <header>
+        <img
+          id="terra-logo"
+          src="./images/terra.png"
+          alt="terra-logo"
+          href="index.html"
+        />
+      </header>
+    </a>
     <div class="grid-container">
       <section>
         <div class="details-container">
@@ -16,14 +25,14 @@
             <div class="delivery-details">
               <h1>Delivery</h1>
               <div class="delivery-container">
-                <first_name>First Name</first_name>
-                <last_name>Last Name</last_name>
-                <email>Email</email>
-                <region_code>Region Code</region_code>
-                <phone_number>Phone Number</phone_number>
-                <country>Country</country>
-                <city>City</city>
-                <addresses>Address</addresses>
+                <div class="first_name">First Name</div>
+                <div class="last_name">Last Name</div>
+                <div class="email">Email</div>
+                <div class="region_code">Region Code</div>
+                <div class="phone_number">Phone Number</div>
+                <div class="country">Country</div>
+                <div class="city">City</div>
+                <div class="addresses">Address</div>
               </div>
             </div>
           </section>
@@ -32,31 +41,57 @@
               <h1>Payment</h1>
               <div class="payment-container">
                 <!-- Credit Card -->
-                <button class="round_button">.</button>
-                <p>Credit Card</p>
+                <div class="round_button">.</div>
+                <p>
+                  Credit Card
+                  <img
+                    id="visa-logo"
+                    src="./images/cc-visa-2.png"
+                    alt="visa-logo"
+                  />
+                  <img
+                    id="mastercard-logo"
+                    src="./images/cc-mastercard.png"
+                    alt="mastercard-logo"
+                  />
+                </p>
                 <!-- images of Visa Mastercard and AmericanExpress -->
                 <div id="credit_card_container">
-                  <card_number> Card Number </card_number>
-                  <expiration> Expiration Date (MM/YY) </expiration>
-                  <security_code> Security Code </security_code>
-                  <name_on_card> Name on Card </name_on_card>
+                  <div class="card_number">Card Number</div>
+                  <div class="expiration">Expiration Date (MM/YY)</div>
+                  <div class="security_code">Security Code</div>
+                  <div class="name_on_card">Name on Card</div>
                 </div>
                 <!-- Apple Pay -->
-                <apple_pay>
-                  <button class="round_button">.</button>
-                  <p>Apple Pay</p>
-                  <!-- image of Apple Pay -->
-                </apple_pay>
+                <div class="apple_pay">
+                  <div class="round_button">.</div>
+                  <p>
+                    Apple Pay
+                    <img
+                      id="apple-pay"
+                      src="./images/cc-apple-pay.jpeg"
+                      alt="apple-pay"
+                    />
+                  </p>
+                </div>
                 <!-- Google Pay -->
-                <google_pay>
-                  <button class="round_button">.</button>
-                  <p>Google Pay</p>
-                  <!-- image of Google Pay -->
-                </google_pay>
+                <div class="google_pay">
+                  <div class="round_button">.</div>
+                  <p>
+                    Google Pay
+                    <img
+                      id="google-pay"
+                      src="./images/cc-google-pay.jpeg"
+                      alt="google-pay"
+                    />
+                  </p>
+                </div>
               </div>
             </div>
             <!-- Pay Now Button -->
-            <button class="pay-now-button">Pay Now</button>
+            <a href="confirmation.html">
+              <button class="pay-now-button">Pay Now</button>
+            </a>
           </section>
         </div>
       </section>

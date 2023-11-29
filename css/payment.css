@@ -1,9 +1,16 @@
 h1 {
   color: #603423;
+  font-size: 1.5rem;
 }
 
 body {
   background-color: #e2dcd5;
+}
+
+#terra-logo {
+  width: 20%;
+  display: block;
+  padding-left: 1rem;
 }
 
 .grid-container {
@@ -11,35 +18,57 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1em;
   color: #616161;
+  padding-left: 1em;
 }
 
 .details-container {
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
   gap: 1em;
+  align-self: left;
+  padding-right: 1rem;
 }
 
 .delivery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1em;
-  padding: 1em;
   color: #616161;
 }
 
-first_name, last_name, email, region_code, phone_number, country, city, addresses {
+.first_name,
+.last_name,
+.email,
+.region_code,
+.phone_number,
+.country,
+.city,
+.addresses {
   background-color: #f7f7f7;
   border-radius: 5px;
-  height: 1.2rem;
+  height: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .payment-container {
   background-color: #f7f7f7;
+  border-radius: 1rem;
+  padding-right: 1rem;
 }
 
 .round-button {
   border-radius: 50%;
-  background-color:#616161;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #616161;
+}
+
+#visa-logo {
+  width: 10%;
+}
+
+#mastercard-logo {
+  width: 10%;
 }
 
 #credit_card_container {
@@ -47,11 +76,10 @@ first_name, last_name, email, region_code, phone_number, country, city, addresse
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1em;
-  padding: 1em;
   color: #616161;
 }
 
-card_number {
+.card_number {
   grid-column: 1 / 3;
   grid-row: 1;
   border-radius: 5px;
@@ -59,7 +87,7 @@ card_number {
   background-color: #e5e4e4;
 }
 
-expiration {
+.expiration {
   grid-column: 1;
   grid-row: 2;
   border-radius: 5px;
@@ -67,7 +95,7 @@ expiration {
   background-color: #e5e4e4;
 }
 
-security_code {
+.security_code {
   grid-column: 2;
   grid-row: 2;
   border-radius: 5px;
@@ -75,7 +103,7 @@ security_code {
   background-color: #e5e4e4;
 }
 
-name_on_card {
+.name_on_card {
   grid-column: 1 / 3;
   grid-row: 3;
   border-radius: 5px;
@@ -83,17 +111,31 @@ name_on_card {
   background-color: #e5e4e4;
 }
 
+.apply-pay {
+  display: inline-block;
+}
+
+#apple-pay {
+  width: 10%;
+}
+
+#google-pay {
+  width: 10%;
+}
+
 .pay-now-button {
   height: 2rem;
-  width: stretch;
-  text-align: stretch;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .products-container {
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: 1em;
-  background-color:#f7f7f7;
+  max-width: 100%;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  background-color: #f7f7f7;
+  border-radius: 1rem;
+  padding-right: 1rem;
 }
 
 .product-info {
@@ -102,17 +144,17 @@ name_on_card {
 }
 
 .product-picture {
-  height: 18vw;
-  width: 18vw;
+  width: 60%;
   text-align: left;
+  border-radius: 1rem;
 }
 
 .product-detail {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   color: #616161;
-  text-align: center;
-  font-size: 70%;
+  text-align: left;
+  font-size: 80%;
 }
 
 .product-number-and-price {
@@ -126,4 +168,5 @@ name_on_card {
 
 .product-price {
   text-align: right;
+  width: fit-content;
 }
