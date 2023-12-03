@@ -128,11 +128,11 @@ body {
 }
 
 #apple-pay {
-  width: 10%;
+  width: 15%;
 }
 
 #google-pay {
-  width: 10%;
+  width: 15%;
 }
 
 .pay-now-button {
@@ -140,7 +140,10 @@ body {
   width: 100%;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #5b573e;
+  color: #f7f7f7;
+  border-color: #f7f7f7;
 }
 
 .products-container {
