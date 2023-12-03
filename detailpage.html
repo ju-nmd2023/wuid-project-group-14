@@ -1,90 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Details Page</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/detailpage.css">
-  <script src="javascript/slideshow.js"></script>
-</head>
-<body onload="initialSlide()">
-  <main>
-    <div class="grid-container">
-      <section>
-        <div class="slideshow-container">
-          <div class="slide">
-            <img class="slideshow-image" src="images/coffeebeans1.webp" alt="Image 1">
-          </div>
-          <div class="slide">
-            <img class="slideshow-image" src="images/coffeebeans2.webp" alt="Image 2">
-          </div>
-          <div class="slide">
-            <img class="slideshow-image" src="images/coffeebeans3.webp" alt="Image 3">
-          </div>
-          <div class="slide">
-            <img class="slideshow-image" src="images/coffeebeans4.png" alt="Image 4">
-          </div>
-          <p class="previous-slide-button" onclick="changeSlide(-1)"><b>&lt</b></p>
-          <p class="next-slide-button" onclick="changeSlide(1)"><b>&gt</b></p>
-          <div class="slide-dots-container">
-            <span class="slide-dot" onclick="displayDotSlide(1)"></span>
-            <span class="slide-dot" onclick="displayDotSlide(2)"></span>
-            <span class="slide-dot" onclick="displayDotSlide(3)"></span>
-            <span class="slide-dot" onclick="displayDotSlide(4)"></span>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="product-details-container">
-          <div>
-            <h1 class="product-name">Name of coffee beans</h1>
-            <h2 class="product-origin">Origin of coffee beans</h2>
-            <h3 class="product-price">Price</h3>
-          </div>
-          <div>
-            <button class="product-option-button1">Option 1</button>
-            <button class="product-option-button2">Option 2</button>
-            <button class="cart-button">Add to cart</button>
-          </div>
-          <div>
-            <div class="modal-container hidden">
-              <h1 class="cart-title">Your Cart</h1>
-              <span class="close-cart-button">&times;</span>
-              <div class="cart-products-container">
-                <section class="cart-section-image">
-                  <img class="cart-product-image" src="images/coffeebeans1.webp">
-                </section>
-                <section class="cart-section-product-details">
-                  <div>
-                    <h1 class="cart-product-name">Name of coffee beans</h1>
-                    <h2 class="cart-product-option">Origin of coffee beans</h2>
-                  </div>
-                  <div style="display: flex;">
-                    <div class="product-counter-container">
-                      <span class="remove">-</span>
-                      <input type="number" class="product-counter-amount" value="1">
-                      <span class="add">+</span>
-                    </div>
-                    <h3 class="cart-product-price">Price</h3>
-                  </div>
-                </section>
-              </div>
-              <div class="cart-footer-container">
-                <h2 class="cart-subtotal">Subtotal</h2>
-                <button class="checkout-button">Checkout</button>
-              </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/detailpage.css" />
+    <script src="javascript/slideshow.js"></script>
+  </head>
+  <body onload="initialSlide()">
+    <main>
+      <div class="grid-container">
+        <section>
+          <div class="slideshow-container">
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/coffeebeans1.webp"
+                alt="Image 1"
+              />
             </div>
-            <div class="overlay hidden"></div>
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/coffeebeans2.webp"
+                alt="Image 2"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/coffeebeans3.webp"
+                alt="Image 3"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/coffeebeans4.png"
+                alt="Image 4"
+              />
+            </div>
+            <p class="previous-slide-button" onclick="changeSlide(-1)">
+              <b>&lt</b>
+            </p>
+            <p class="next-slide-button" onclick="changeSlide(1)"><b>&gt</b></p>
+            <div class="slide-dots-container">
+              <span class="slide-dot" onclick="displayDotSlide(1)"></span>
+              <span class="slide-dot" onclick="displayDotSlide(2)"></span>
+              <span class="slide-dot" onclick="displayDotSlide(3)"></span>
+              <span class="slide-dot" onclick="displayDotSlide(4)"></span>
+            </div>
           </div>
-          <div>
-            <p class="product-info">Information about the coffee beans</p>
+        </section>
+        <section>
+          <div class="product-details-container">
+            <div>
+              <h1 class="product-name">Espresso House</h1>
+              <h2 class="product-origin">Japan</h2>
+              <h3 class="product-price">199 SEK</h3>
+            </div>
+            <div>
+              <button class="product-option-button1">Dark roast</button>
+              <button class="product-option-button2">Blonde roast</button>
+              <button class="cart-button">Add to cart</button>
+            </div>
+            <div>
+              <div class="modal-container hidden">
+                <h1 class="cart-title">Your Cart</h1>
+                <span class="close-cart-button">&times;</span>
+                <div class="cart-products-container">
+                  <section class="cart-section-image">
+                    <img
+                      class="cart-product-image"
+                      src="images/coffeebeans1.webp"
+                    />
+                  </section>
+                  <section class="cart-section-product-details">
+                    <div>
+                      <h1 class="cart-product-name">Name of coffee beans</h1>
+                      <h2 class="cart-product-option">
+                        Origin of coffee beans
+                      </h2>
+                    </div>
+                    <div style="display: flex">
+                      <div class="product-counter-container">
+                        <span class="remove">-</span>
+                        <input
+                          type="number"
+                          class="product-counter-amount"
+                          value="1"
+                        />
+                        <span class="add">+</span>
+                      </div>
+                      <h3 class="cart-product-price">Price</h3>
+                    </div>
+                  </section>
+                </div>
+                <div class="cart-footer-container">
+                  <h2 class="cart-subtotal">Subtotal</h2>
+                  <button class="checkout-button">Checkout</button>
+                </div>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+            <div>
+              <p class="product-info">
+                Indulge in the enchanting world of Japanese coffee with
+                "Espresso House," offering a harmonious blend of tradition and
+                innovation. Unveiling a symphony of flavors, our premium coffee
+                beans come in two captivating expressions - the bold and robust
+                Dark Roast, embodying the depth of Japanese heritage, and the
+                gentle and nuanced Blonde Roast, capturing the essence of
+                refined simplicity. Sourced with care and roasted with
+                expertise, each bag of Espresso House takes you on a journey
+                through Japan's diverse landscapes, culminating in a delightful
+                fusion of culture and craftsmanship. Elevate your coffee
+                experience with Espresso House - where the art of dark and
+                blonde roasts converges to create a symphony of unparalleled
+                richness in every cup.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
-  </main>
-  <script src="javascript/cart.js"></script>
-  <script src="javascript/productCounter.js"></script>
-</body>
+        </section>
+      </div>
+    </main>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/productCounter.js"></script>
+  </body>
 </html>
