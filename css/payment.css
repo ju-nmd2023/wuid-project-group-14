@@ -7,6 +7,7 @@ body {
   background-color: #e2dcd5;
 }
 
+/* Header */
 #terra-logo {
   max-width: 20%;
   display: block;
@@ -36,6 +37,7 @@ body {
   padding-right: 1rem;
 }
 
+/* Delivery Part */
 .delivery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -46,7 +48,7 @@ body {
 .first-name,
 .last-name,
 .email,
-.region_code,
+.region-code,
 .phone-number,
 .country,
 .city,
@@ -58,6 +60,7 @@ body {
   border-color: #f7f7f7;
 }
 
+/* Payment Part */
 .payment-container {
   background-color: #f7f7f7;
   border-radius: 0.5rem;
@@ -122,10 +125,6 @@ body {
   background-color: #e5e4e4;
 }
 
-.apple-pay {
-  display: inline-block;
-}
-
 #apple-pay {
   max-width: 10%;
 }
@@ -145,6 +144,7 @@ body {
   border-color: #f7f7f7;
 }
 
+/* Products Part */
 .products-container {
   display: grid;
   max-width: 100%;
@@ -188,6 +188,7 @@ body {
   width: fit-content;
 }
 
+/* Footer */
 footer {
   height: 2rem;
 }
