@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+li,
+a,
+input {
+  margin: 0 10px 0 0;
+  padding: 0 0 0 0;
+  font-size: 16px;
+  color: #603423;
+}
+
+h1 {
+  margin-left: 30px;
+  padding-top: 20px;
+  font-size: 40px;
+  font-family: "Noto Sans";
+  color: #603423;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.back-arrow {
+  width: 30px;
+  float: left;
+  display: block;
+  margin: 20px 0 0 30px;
+}
+
+/* Products */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  gap: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  gap: 40px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-container2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+section {
+  width: 100%;
+}
+
+.image-productpage {
+  border-radius: 15px;
+  width: 60%;
+  float: left;
+  display: block;
+  padding-left: 2px;
+  margin-right: 15px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  color: #603423;
+  font-weight: 16px;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+
+.add-to-cart {
+  width: 10%;
+  float: right;
+  display: block;
+  margin-left: 30px;
+}

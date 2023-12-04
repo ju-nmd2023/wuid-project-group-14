@@ -1,60 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Details Page</title>
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/detailpage.css">
-  <script src="javascript/slideshow.js"></script>
-</head>
-<body onload="initialSlide()">
-  <main>
-    <div class="grid-container">
-      <section>
-        <div class="slideshow-container">
-          <div class="slide">
-            <img src="images/coffeebeans1.webp" alt="Image 1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/detailpage.css" />
+    <script src="javascript/slideshow.js"></script>
+  </head>
+  <body onload="initialSlide()">
+    <header>
+      <div class="navbar-secondary">
+        <nav>
+          <a href="index.html">
+            <img
+            src="images/terra.png"
+            alt="logo terra"
+            class="image-logo-navbar"
+          />
+          </a>
+          <ul class="ul-navbar">
+            <li><input class="text" placeholder="Search..." /></li>
+            <li><a href="index.html#About-Us">About us</a></li>
+            <li><a href="productcoffeebeans.html">Coffee Beans</a></li>
+            <li><a href="productcoffeemachines.html">Coffee Machines</a></li>
+            <li><a href="productmugs.html">Coffee Mugs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="grid-container">
+        <section class="detail-page-section">
+          <div class="slideshow-container">
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/ueshima1.webp"
+                alt="ueshima tokyo roast beans"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/ueshima2.webp"
+                alt="ueshima fuji mountain beans"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/ueshima3.webp"
+                alt="ueshima house blend beans"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slideshow-image"
+                src="images/ueshima4.webp"
+                alt="ueshima coffee beans"
+              />
+            </div>
+            <p class="previous-slide-button" onclick="changeSlide(-1)">
+              <b>&lt</b>
+            </p>
+            <p class="next-slide-button" onclick="changeSlide(1)"><b>&gt</b></p>
+            <div class="slide-dots-container">
+              <span class="slide-dot" onclick="displayDotSlide(1)"></span>
+              <span class="slide-dot" onclick="displayDotSlide(2)"></span>
+              <span class="slide-dot" onclick="displayDotSlide(3)"></span>
+              <span class="slide-dot" onclick="displayDotSlide(4)"></span>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/coffeebeans2.webp" alt="Image 2">
+        </section>
+        <section class="detail-page-section">
+          <div class="product-details-container">
+            <div>
+              <h1 class="product-name">Ueshima Blends</h1>
+              <h2 class="product-origin">Japan</h2>
+              <h3 class="product-price">199 SEK</h3>
+            </div>
+            <div>
+              <button class="product-option-button1">Tokyo Roast</button>
+              <button class="product-option-button2">Fuji Mountain</button>
+              <button class="product-option-button3">House Blend</button>
+              <button class="cart-button">Add to cart</button>
+            </div>
+            <div>
+              <div class="modal-container hidden">
+                <h1 class="cart-title">Your Cart</h1>
+                <span class="close-cart-button">&times;</span>
+                <div class="cart-products-container">
+                  <section class="cart-section-image">
+                    <img class="cart-product-image" src="images/ueshima1.webp">
+                  </section>
+                  <section class="cart-section-product-details">
+                    <div>
+                      <h1 class="cart-product-name">Ueshima Blends</h1>
+                      <h2 class="cart-product-option">Japan</h2>
+                    </div>
+                    <div style="display: flex;">
+                      <div class="product-counter-container">
+                        <span class="remove product1">-</span>
+                        <input type="number" class="product-counter-amount product1" value="1">
+                        <span class="add product1">+</span>
+                      </div>
+                      <h3 class="cart-product-price">199 SEK</h3>
+                    </div>
+                  </section>
+                  <section class="cart-section-image">
+                    <img class="cart-product-image" src="images/machine2.jpeg">
+                  </section>
+                  <section class="cart-section-product-details">
+                    <div>
+                      <h1 class="cart-product-name">Thera Advance</h1>
+                      <h2 class="cart-product-option">Automatic Espresso Coffee Machine</h2>
+                    </div>
+                    <div style="display: flex;">
+                      <div class="product-counter-container">
+                        <span class="remove product2">-</span>
+                        <input type="number" class="product-counter-amount product2" value="1">
+                        <span class="add product2">+</span>
+                      </div>
+                      <h3 class="cart-product-price">3599 SEK</h3>
+                    </div>
+                  </section>
+                  <section class="cart-section-image">
+                    <img class="cart-product-image" src="images/mug1.png">
+                  </section>
+                  <section class="cart-section-product-details">
+                    <div>
+                      <h1 class="cart-product-name">Timeless White Mugs</h1>
+                      <h2 class="cart-product-option">Peru</h2>
+                    </div>
+                    <div style="display: flex;">
+                      <div class="product-counter-container">
+                        <span class="remove product3">-</span>
+                        <input type="number product3" class="product-counter-amount product3" value="1">
+                        <span class="add product3">+</span>
+                      </div>
+                      <h3 class="cart-product-price">79 SEK</h3>
+                    </div>
+                  </section>
+                </div>
+                <div class="cart-footer-container">
+                  <h2 class="cart-subtotal">Subtotal: </h2>
+                  <button onclick="location.href='payment.html'" class="checkout-button">Checkout</button>
+                </div>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+            <div>
+              <p class="product-info">
+                Embark on a sensory journey through the heart of Japan with
+                Ueshima. Immerse yourself in the vibrant flavors of our
+                meticulously crafted coffee beans, available in three distinct
+                expressions. Experience the bold intensity of "Tokyo Roast," a
+                rich and robust blend that encapsulates the dynamic energy of
+                the city. Delight in the serene elegance of "Fuji Mountain," a
+                nuanced coffee that pays homage to the iconic landscapes
+                surrounding Mount Fuji. For those seeking a harmonious balance,
+                our signature "House Blend" brings together the best of Japanese
+                coffee craftsmanship, delivering a well-rounded and satisfying
+                cup. Elevate your coffee ritual with Ueshima, where each roast
+                is a tribute to the diverse beauty and culture of Japan.
+              </p>
+            </div>
           </div>
-          <div class="slide">
-            <img src="images/coffeebeans3.webp" alt="Image 3">
-          </div>
-          <div class="slide">
-            <img src="images/coffeebeans4.png" alt="Image 4">
-          </div>
-          <p class="previous-slide-button" onclick="changeSlide(-1)"><b>&lt</b></p>
-          <p class="next-slide-button" onclick="changeSlide(1)"><b>&gt</b></p>
-          <div class="slide-dots-container">
-            <span class="slide-dot" onclick="displayDotSlide(1)"></span>
-            <span class="slide-dot" onclick="displayDotSlide(2)"></span>
-            <span class="slide-dot" onclick="displayDotSlide(3)"></span>
-            <span class="slide-dot" onclick="displayDotSlide(4)"></span>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="product-details-container">
-          <div>
-            <h1 class="product-name">Name of coffee beans</h1>
-            <h2 class="product-origin">Origin of coffee beans</h2>
-            <h3 class="product-price">Price</h3>
-          </div>
-          <div>
-            <button class="product-option-button">Option 1</button>
-            <button class="product-option-button">Option 2</button>
-          </div>
-          <div>
-            <button class="cart-button">Add to cart</button>
-          </div>
-          <div>
-            <p class="product-info">Information about the coffee beans</p>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="grid-footer">
+        <section>
+          <p>About us</p>
+          <p>Contact</p>
+          <img
+            src="images/instagram.png"
+            alt="insta-icon"
+            class="footer-media"
+          />
+          <img
+            src="images/twitter.png"
+            alt="twitter-icons"
+            class="footer-media"
+          />
+        </section>
+        <section>
+          <p>Terms and Conditions</p>
+          <p>Shipping Information</p>
+          <p>Privacy Policy</p>
+        </section>
+        <section>
+          <br />
+          <img src="images/cc-visa.png" alt="visa-icon" class="footer-pics" />
+          <img
+            src="images/cc-apple-pay.png"
+            alt="apple-icon"
+            class="footer-pics"
+          /><br />
+          <p>&copy; 2023, Terra</p>
+        </section>
+      </div>
+    </footer>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/productCounter.js"></script>
+  </body>
 </html>

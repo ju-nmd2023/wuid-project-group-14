@@ -3,7 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Payment Process</title>
+    <link rel="stylesheet" href="css/payment.css" />
+    <script src="javascript/payment.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-- Terra Header -->
+    <a href="index.html">
+      <header>
+        <img
+          id="terra-logo"
+          src="./images/terra.png"
+          alt="terra-logo"
+          href="index.html"
+        />
+      </header>
+    </a>
+
+    <span class="back-button" onclick="location.href='detailpage.html'">&#8592;</span>
+    <div class="grid-container">
+      <section>
+        <div class="details-container">
+          <section>
+            <div class="delivery-details">
+              <h1>Delivery</h1>
+              <div class="delivery-container">
+                <input class="first-name" type="text" placeholder="First Name"></input>
+                <input class="last-name" type="text" placeholder="Last Name"></input>
+                <input class="email" type="text" placeholder="Email"></input>
+                <input class="region-code" type="number" placeholder="Region Code"></input>
+                <input class="phone-number" type="number" placeholder="Phone Number"></input>
+                <input class="country" type="text" placeholder="Country"></input>
+                <input class="city" type="text" placeholder="City"></input>
+                <input class="addresses" type="text" placeholder="Address"></input>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="payment-details">
+              <h1>Payment</h1>
+              <div class="payment-container">
+                <!-- Credit Card -->
+                <button class="round-button" id="credit-card-button"></button>
+                <p class="payment-button">
+                  Credit Card
+                  <img
+                    id="visa-mastercard-logo"
+                    src="./images/cc-visa-mastercard.png"
+                    alt="visa-mastercard-logo"
+                  />
+                </p>
+                <!-- images of Visa Mastercard and AmericanExpress -->
+                <div id="credit-card-container">
+                  <input class="card-number" type="number"placeholder="Card Number"></input>
+                  <input class="expiration-date" type="text" placeholder="MM/YY"></input>
+                  <input class="security-code" type="number" placeholder="Security Code"></input>
+                  <input class="name-on-card" type="text" placeholder="Name on Card"></input>
+                </div>
+                <!-- Apple Pay -->
+                <div class="apple-pay">
+                  <button class="round-button" id="apple-pay-button"></button>
+                  <p>
+                    Apple Pay
+                    <img
+                      id="apple-pay"
+                      src="./images/cc-apple-pay.jpeg"
+                      alt="apple-pay"
+                    />
+                  </p>
+                </div>
+                <!-- Google Pay -->
+                <div class="google-pay">
+                  <button class="round-button" id="google-pay-button"></button>
+                  <p>
+                    Google Pay
+                    <img
+                      id="google-pay"
+                      src="./images/cc-google-pay.jpeg"
+                      alt="google-pay"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Pay Now Button -->
+            <button class="pay-now-button" onclick="location.href='confirmation.html'">Pay Now</button>
+          </section>
+        </div>
+      </section>
+      <section>
+        <h1>Products</h1>
+        <div class="products-container">
+          <div class="product-info">
+            <img
+              src="./images/ueshima1.webp"
+              alt="House Expresso"
+              class="product-picture"
+            />
+            <div class="product-detail">
+              <h2 class="product-name">Ueshima Blends</h2>
+              <div class="product-number-and-price">
+                <h3 class="product-number">Tokyo Roast &#215 2</h3>
+                <h3 class="product-price">398,00 SEK</h3>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <img
+              src="./images/machine2.jpeg"
+              alt="Thera Advance"
+              class="product-picture"
+            />
+            <div class="product-detail">
+              <h2 class="product-name">Thera Advance</h2>
+              <div class="product-number-and-price">
+                <h3 class="product-number">1</h3>
+                <h3 class="product-price">3 599,00 SEK</h3>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <img
+              src="./images/mug1.png"
+              alt="Timeless White Mugs"
+              class="product-picture"
+            />
+            <div class="product-detail">
+              <h2 class="product-name">Timeless White Mugs</h2>
+              <div class="product-number-and-price">
+                <h3 class="product-number">1</h3>
+                <h3 class="product-price">79,00 SEK</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <footer></footer>
 </html>
