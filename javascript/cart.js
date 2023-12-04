@@ -46,8 +46,10 @@ const closeCart = function () {
 
 closeCartButton.addEventListener("click", closeCart);
 
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !cart.classList.contains("hidden")) {
+document.addEventListener("keydown", function (keydown) {
+  if (keydown.key === "Escape" && !cart.classList.contains("hidden")) {
     closeCart();
   }
 });
+
+// modal tutorial: https://www.freecodecamp.org/news/how-to-build-a-modal-with-javascript/

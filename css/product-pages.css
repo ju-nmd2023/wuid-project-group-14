@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-color: #ded5cb;
-}
-
 li,
 a,
 input {
@@ -27,13 +17,6 @@ h1 {
   color: #603423;
   font-style: normal;
   font-weight: 400;
-}
-
-.image-logo-navbar {
-  width: 20%;
-  justify-self: center;
-  text-align: left;
-  float: left;
 }
 
 .back-arrow {
