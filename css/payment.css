@@ -11,7 +11,7 @@ body {
 
 /* Header */
 #terra-logo {
-  max-width: 30%;
+  max-width: 20%;
   display: block;
   padding-left: 1rem;
 }
@@ -25,7 +25,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 0.5rem;
   color: #616161;
   padding-left: 1rem;
@@ -81,7 +81,6 @@ body {
   height: 1rem;
   border-width: 0.1rem;
   border-style: solid;
-
 }
 
 #visa-mastercard-logo {
@@ -223,6 +222,13 @@ body {
   width: fit-content;
 }
 
+.total-amount-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #616161;
+  text-align: left;
+  font-size: 100%;
+}
 /* Footer */
 footer {
   height: 2rem;
