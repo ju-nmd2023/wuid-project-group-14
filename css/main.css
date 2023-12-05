@@ -11,14 +11,14 @@ body {
 /* Header */
 .header {
   flex-direction: column;
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: left;
   font-family: "Noto Sans";
   color: #fff;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 0 0;
-  padding: 120px 70px 0 70px;
+  padding: 7.5rem 4.3rem 0 4.3rem;
 }
 
 
@@ -44,7 +44,7 @@ body {
 }
 
 .image-product {
-  border-radius: 15px;
+  border-radius: 0.9rem;
   width: 100%;
   height: 60%;
   padding: 0 0 0 0;
@@ -52,7 +52,7 @@ body {
 
 .image-product.fit {
   display: block;
-  margin: 0 0 2em 0;
+  margin: 0 0 2rem 0;
   width: 100%;
 }
 @media screen and (min-width: 600px) {
@@ -66,7 +66,7 @@ body {
     gap: 2vh;
   }
   header {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 }
 
@@ -83,7 +83,7 @@ body {
 
 
 .navbar-secondary {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -95,29 +95,28 @@ body {
 
 .ul-navbar {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   float: right;
 }
 
 .header h3 {
   color: #fff;
   font-family: Noto Sans;
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 1.75rem;
   line-height: normal;
 }
 
 .button-buy {
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   color: #fff;
   background-color: transparent;
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 0.125rem solid #fff;
   cursor: pointer;
-  margin-right: 460px;
+  margin-right: 28.75rem;
 }
 
 .button-buy:hover {
@@ -131,21 +130,21 @@ h4,
 h5,
 h6 {
   color: #787878;
-  font-weight: 16px;
-  line-height: 1em;
-  margin: 0 0 1em 0;
+  font-weight: 1rem;
+  line-height: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .image-logo {
   width: 25%;
   float: left;
   display: block;
-  padding-left: 2px;
+  padding-left: 0.125rem;
   
 }
 
 .image-logo-navbar {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   width: 20%;
   float: left;
 }
@@ -157,7 +156,7 @@ a {
   color: #ded5cb;
   text-decoration: none;
   font-family: "Noto Sans";
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 a:hover {
@@ -172,7 +171,7 @@ a:hover {
   align-items: center;
   padding: 0.3rem;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9rem;
   font-family: "Noto Sans";
   cursor: pointer;
 }
@@ -186,7 +185,7 @@ a:hover {
       rgba(96, 52, 35, 0) 97.97%
     ),
     url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
-  height: 800px;
+  height: 50rem;
 }
 
 /* About us Section */
@@ -206,20 +205,19 @@ a:hover {
   width: 70%;
   float: left;
   display: flex;
-  padding-left: 60px;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  padding-right: 50px;
+  padding-left: 3.75rem;
+  padding-top: 5rem;
+  padding-bottom: 3.125rem;
+  padding-right: 3.125rem;
 }
 #about-subtitle {
   grid-column: 2 / 3;
   display: flex;
   color: #603423;
   font-family: "Noto Sans";
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: normal;
-  font-weight: 700;
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 .sub-grid2 {
@@ -232,14 +230,14 @@ a:hover {
   grid-column: 1 / 2;
   color: #603423;
   font-family: "Noto Sans";
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 #about-p2 {
   grid-column: 2 / 3;
   color: #603423;
   font-family: "Noto Sans";
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 /* Products Section */
@@ -252,8 +250,7 @@ a:hover {
 #our-products {
   color: #603423;
   font-family: "Noto Sans";
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 1rem;
   line-height: normal;
   padding: 2rem;
 }
@@ -272,8 +269,8 @@ footer {
   margin-top: auto;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 20px;
-  gap: 30px;
+  padding: 1.25rem;
+  gap: 1.875rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -287,11 +284,11 @@ footer {
 }
 
 .footer-pics {
-  width: 10%;
+  width: 15%;
   padding-bottom: 0rem;
 }
 
 .footer-media {
-  width: 5%;
+  width: 10%;
   padding-left: 0.5rem;
 }
