@@ -11,7 +11,7 @@ h1 {
 /* Header */
 .header {
   flex-direction: column;
-  font-size: 100%;
+  font-size: 1.8rem;
   text-align: left;
   font-family: "Noto Sans";
   color: #fff;
@@ -43,7 +43,7 @@ body {
 h3 {
   color: #fff;
   font-family: Noto Sans;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: normal;
   text-align: center;
