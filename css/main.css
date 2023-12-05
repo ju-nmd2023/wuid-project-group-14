@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
-<<<<<<< Updated upstream
 body {
   display: flex;
   flex-direction: column;
@@ -9,8 +8,6 @@ body {
   height: 100%;
 }
 
-=======
->>>>>>> Stashed changes
 /* Header */
 .header {
   flex-direction: column;
@@ -32,6 +29,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
+  
 }
 
 .li-nav{
@@ -139,10 +137,11 @@ h6 {
 }
 
 .image-logo {
-  width: 20%;
+  width: 25%;
   float: left;
   display: block;
   padding-left: 2px;
+  
 }
 
 .image-logo-navbar {
@@ -167,15 +166,15 @@ a:hover {
 
 .text {
   flex: 1 0 0;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.3rem;
+  border-style: none;
+  background: rgba(40, 27, 27, 0.6);
   align-items: center;
-  padding: 2px;
+  padding: 0.3rem;
   color: #fff;
   font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
   font-family: "Noto Sans";
+  cursor: pointer;
 }
 
 .welcome-style {

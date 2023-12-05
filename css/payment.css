@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 h1 {
   color: #603423;
   font-size: 1.5rem;
@@ -5,11 +6,12 @@ h1 {
 
 body {
   background-color: #e2dcd5;
+  font-family: "Noto Sans";
 }
 
 /* Header */
 #terra-logo {
-  max-width: 20%;
+  max-width: 30%;
   display: block;
   padding-left: 1rem;
 }
@@ -58,6 +60,8 @@ body {
   height: 1.5rem;
   font-size: 1.2rem;
   border-color: #f7f7f7;
+  padding: 0.3rem;
+  border-style: none;
 }
 
 /* Payment Part */
@@ -66,6 +70,7 @@ body {
   border-radius: 0.5rem;
   padding-right: 1rem;
   font-size: 1.3rem;
+  padding-bottom: 0.5rem;
 }
 
 .round-button {
@@ -74,9 +79,14 @@ body {
   border-radius: 50%;
   width: 1rem;
   height: 1rem;
+  border-width: 0.1rem;
+  border-style: solid;
+
 }
 
 #visa-mastercard-logo {
+  margin-top: 10px;
+  padding-left: 10px;
   max-width: 18%;
 }
 
@@ -87,6 +97,7 @@ body {
   gap: 0.5rem;
   color: #616161;
   padding-left: 1rem;
+  padding-top: 10px;
 }
 
 .card-number {
@@ -96,6 +107,8 @@ body {
   font-size: 1.2rem;
   height: 1.5rem;
   background-color: #e5e4e4;
+  padding: 0.3rem;
+  border-style: none;
 }
 
 .expiration-date {
@@ -105,15 +118,20 @@ body {
   font-size: 1.2rem;
   height: 1.5rem;
   background-color: #e5e4e4;
+  padding: 0.3rem;
+  border-style: none;
 }
 
 .security-code {
   grid-column: 2;
   grid-row: 2;
   border-radius: 0.2rem;
+  border-color: #241212;
+  border-style: none;
   font-size: 1.2rem;
   height: 1.5rem;
   background-color: #e5e4e4;
+  padding: 0.3rem;
 }
 
 .name-on-card {
@@ -123,6 +141,8 @@ body {
   font-size: 1.2rem;
   height: 1.5rem;
   background-color: #e5e4e4;
+  padding: 0.3rem;
+  border-style: none;
 }
 
 #apple-pay {
@@ -131,6 +151,7 @@ body {
 
 #google-pay {
   max-width: 10%;
+  padding-left: 0.5rem;
 }
 
 .pay-now-button {
@@ -138,10 +159,21 @@ body {
   width: 100%;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Noto Sans";
   background-color: #5b573e;
   color: #f7f7f7;
   border-color: #f7f7f7;
+  margin-top: 1rem;
+  border-width: 0.2rem;
+  border-color: #f7f7f7;
+  border-style: solid;
+}
+
+.pay-now-button:hover {
+  background-color: #423f2c;
+  color: #ffffff;
+  border-color: #a0a0a0;
+  border-width: 0.2rem;
 }
 
 /* Products Part */
@@ -153,6 +185,9 @@ body {
   border-radius: 0.5rem;
   padding-right: 1rem;
   font-size: 1.1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .product-info {
