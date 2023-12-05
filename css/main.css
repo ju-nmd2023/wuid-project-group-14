@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 
+<<<<<<< Updated upstream
 body {
   display: flex;
   flex-direction: column;
@@ -8,6 +9,8 @@ body {
   height: 100%;
 }
 
+=======
+>>>>>>> Stashed changes
 /* Header */
 .header {
   flex-direction: column;
@@ -21,27 +24,65 @@ body {
   padding: 120px 70px 0 70px;
 }
 
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.li-nav{
+  margin: 30px 0 0 0;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  color: #ded5cb;
+}
+
 body {
   margin: 0 0 0 0;
 }
 
-@media screen and (max-width: 520px) {
+.image-product {
+  border-radius: 15px;
+  width: 100%;
+  height: 60%;
+  padding: 0 0 0 0;
+}
+
+.image-product.fit {
+  display: block;
+  margin: 0 0 2em 0;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  
+}
+
+@media screen and (min-width: 900px) {
   .first-nav {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2vh;
   }
-}
-
-@media screen and (max-width: 980px) {
   header {
     font-size: 20px;
   }
+}
 
+@media screen and (min-width: 1200px) {
+  .first-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+  }
+}
   ul {
     margin: 0 0 0 0;
   }
-}
+
 
 .navbar-secondary {
   margin-bottom: 20px;
@@ -78,7 +119,7 @@ body {
   text-decoration: none;
   border: 2px solid #fff;
   cursor: pointer;
-  margin-right: 490px;
+  margin-right: 460px;
 }
 
 .button-buy:hover {
@@ -218,18 +259,6 @@ a:hover {
   padding: 2rem;
 }
 
-.image-product {
-  border-radius: 15px;
-  width: 100%;
-  height: 60%;
-  padding: 0 0 0 0;
-}
-
-.image-product.fit {
-  display: block;
-  margin: 0 0 2em 0;
-  width: 100%;
-}
 
 /*Footer*/
 footer {
