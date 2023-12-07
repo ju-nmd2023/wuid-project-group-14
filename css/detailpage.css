@@ -15,6 +15,18 @@ input {
   color: #603423;
 }
 
+.text-white {
+  flex: 1 0 0;
+  border-radius: 0.3rem;
+  border-style: none;
+  background: rgba(147, 143, 143, 0.6);
+  align-items: center;
+  padding: 0.3rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: "Noto Sans";
+  cursor: pointer;
+}
 
 .back-arrow {
   width: 30px;
@@ -31,7 +43,7 @@ input {
 }
 
 .detail-page-section {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
   display: flex;
   position: relative;
   text-align: center;
@@ -286,7 +298,7 @@ input {
   background-color: #482416;
 }
 
-.modal-container::-webkit-scrollbar { 
+.modal-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -294,27 +306,27 @@ input {
 https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll*/
 
 @media screen and (max-width: 600px) {
-    .modal-container {
-        width: 100%;
-    }
+  .modal-container {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .modal-container {
-        width: 80%;
-    }
+  .modal-container {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 800px) {
-    .modal-container {
-        width: 60%;
-    }
+  .modal-container {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .modal-container {
-        width: 40%;
-    }
+  .modal-container {
+    width: 40%;
+  }
 }
 
 .close-cart-button {
