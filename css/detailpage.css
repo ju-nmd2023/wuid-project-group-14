@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text");
 
+/* Body */
 body {
   background-color: white;
 }
 
+/* Text */
 li,
 a,
 input {
@@ -28,6 +30,7 @@ input {
   cursor: pointer;
 }
 
+/* Back arrow button */
 .back-arrow {
   width: 30px;
   float: left;
@@ -35,6 +38,7 @@ input {
   margin: 20px 0 0 30px;
 }
 
+/* Grid container for slideshow and product */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -42,6 +46,7 @@ input {
   gap: 30px;
 }
 
+/* Styling for the main page sections */
 .detail-page-section {
   margin-bottom: 60px;
   display: flex;
@@ -53,6 +58,7 @@ input {
   height: 100%;
 }
 
+/* Image styling */
 .slideshow-image,
 .cart-product-image {
   width: 100%;
@@ -60,24 +66,28 @@ input {
   object-fit: scale-down;
 }
 
+/* Responsiveness of main page */
 @media screen and (min-width: 700px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
+/* Container of the images in the slideshow */
 .slideshow-container {
   position: relative;
   width: 100%;
   height: 500px;
 }
 
+/* Slide attributes */
 .slide {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
+/* Slide left and right arrows attributes*/
 .previous-slide-button,
 .next-slide-button {
   padding: 25px 30px 25px 30px;
@@ -110,6 +120,7 @@ input {
   transform: scale(1);
 }
 
+/* Container for the display dots */
 .slide-dots-container {
   display: flex;
   position: absolute;
@@ -119,6 +130,7 @@ input {
   text-align: center;
 }
 
+/* Display dots styling */
 .slide-dot {
   display: block;
   margin-right: 20px;
@@ -135,10 +147,12 @@ input {
   background-color: #616161;
 }
 
+/* Container for product information */
 .product-details-container {
   text-align: center;
 }
 
+/* Styling for specific text */
 .product-name,
 .product-origin,
 .product-price,
@@ -180,6 +194,7 @@ input {
   font-weight: 400;
 }
 
+/* Styling for the buttons */
 .product-option-button1,
 .product-option-button2,
 .product-option-button3,
@@ -247,6 +262,7 @@ input {
   line-height: normal;
 }
 
+/* Individual text styling for the cart modal header */
 .cart-title {
   margin: 0;
   margin-bottom: 40px;
@@ -263,6 +279,7 @@ input {
   line-height: normal;
 }
 
+/* Individual text styling for the subtotal */
 .cart-subtotal {
   margin: 0 0 10px 35px;
   text-align: left;
@@ -274,6 +291,7 @@ input {
   line-height: normal;
 }
 
+/* Container for the bottom part of the cart modal */
 .cart-footer-container {
   position: relative;
   bottom: 0;
@@ -285,6 +303,7 @@ input {
   outline: none auto 1px;
 }
 
+/* Container for the cart modal */
 .modal-container {
   position: fixed;
   z-index: 2;
@@ -305,6 +324,8 @@ input {
 /*hide scrollbar on overflow while keeping scroll functionality: 
 https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll*/
 
+
+/* Responsiveness of the cart modal */
 @media screen and (max-width: 600px) {
   .modal-container {
     width: 100%;
@@ -329,6 +350,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   }
 }
 
+/* Styling for the x button in the cart modal */
 .close-cart-button {
   position: absolute;
   top: 35px;
@@ -343,6 +365,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   color: black;
 }
 
+/* Screen overlay displayed behind the cart modal */
 .overlay {
   position: fixed;
   z-index: 1;
@@ -356,10 +379,12 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   height: 100%;
 }
 
+/* Class used to hide elements */
 .hidden {
   display: none;
 }
 
+/* Class used to change the color of the selected option */
 .active-option {
   background-color: #b5a186;
 }
@@ -368,6 +393,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   outline: #8c7d68 solid medium;
 }
 
+/* Container for the products in the cart */
 .cart-products-container {
   display: grid;
   position: relative;
@@ -376,6 +402,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   width: 100%;
 }
 
+/* Styling for the product image section in the cart */
 .cart-section-image {
   margin-left: 35px;
   margin-bottom: 30px;
@@ -383,6 +410,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   height: 100%;
 }
 
+/* Styling for the product information section in the cart */
 .cart-section-product-details {
   display: inline-block;
   margin-left: -50px;
@@ -390,6 +418,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   height: 100%;
 }
 
+/* Container for the product counter */
 .product-counter-container {
   display: flex;
   width: auto;
@@ -397,6 +426,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   justify-content: center;
 }
 
+/* Styling for span inside container for the product counter */
 .product-counter-container span {
   display: block;
   padding-right: 20px;
@@ -410,6 +440,7 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   cursor: pointer;
 }
 
+/* Styling for the amount */
 .product-counter-amount {
   margin-right: 20px;
   width: 50px;
@@ -440,6 +471,7 @@ https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-
   outline: #7d5432 solid medium;
 }
 
+/* Styling for text inside the cart */
 .cart-product-name,
 .cart-product-option,
 .cart-product-price {
