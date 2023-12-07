@@ -202,6 +202,15 @@ a:hover {
   gap: 1vh;
 }
 
+@media screen and (max-width: 600px) {
+  .sub-grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vh;
+  }
+
+}
+
 #about-p1 {
   grid-column: 1 / 2;
   color: #603423;
