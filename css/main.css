@@ -223,11 +223,7 @@ a:hover {
 .image-product {
   width: 80%;
   height: 70%;
-  margin: 0 auto;
-  padding-left: 2px;
-  margin-bottom: 15px;
   border-radius: 15px;
-  float: center;
 }
 
 .image-product:hover {
@@ -243,6 +239,7 @@ a:hover {
   }
 }
 
+
 @media screen and (min-width: 600px) {
   .products {
     display: grid;
@@ -254,6 +251,7 @@ a:hover {
     width: 100%;
     margin: 0;
   }
+
 }
 
 @media screen and (min-width: 700px) {
@@ -261,10 +259,6 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-  }
-
-  .product-text {
-    margin-top: 1rem;
   }
 }
 
@@ -276,44 +270,16 @@ a:hover {
   padding: 2rem;
 }
 
-.title-product {
-  padding-left: 2rem;
+
+.product-text {
+  position: relative;
+  top: -40%;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Noto Sans";
   font-size: 1.5rem;
-}
-
-.product-text1 {
-  position: relative;
-  top: -20%;
-  left: 10%;
-  color: #fff;
-  padding: 10px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 2rem;
   line-height: normal;
-  width: 20%; 
-
-}
-.product-text2 {
-  position: relative;
-  top: -20%;
-  left: 10%;
-  color: #ffffff;
-  padding: 10px;
-  font-family: "Noto Sans";
-  font-size: 2rem;
-  line-height: normal;
-  width: 20%;
-}
-.product-text3 {
-  position: relative;
-  top: -26%;
-  left: 10%;
-  color: #ffffff;
-  padding: 10px;
-  font-family: "Noto Sans";
-  font-size: 2rem;
-  line-height: normal;
-  width: 20%;
+  text-align: center;
 }
 
 /*Footer*/
