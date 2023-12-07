@@ -137,7 +137,7 @@ input {
 
 .product-name {
   margin: 0;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: left;
 }
 
@@ -179,7 +179,7 @@ input {
 .product-option-button3 {
   margin: 0 5px 25px 5px;
   width: 30%;
-  height: 40px;
+  padding: 0.8rem;
   background-color: #d4c8b9;
 }
 
