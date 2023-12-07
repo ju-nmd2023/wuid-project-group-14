@@ -144,6 +144,8 @@ a:hover {
   cursor: pointer;
 }
 
+
+
 .welcome-style {
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -186,9 +188,10 @@ a:hover {
 
 .sub-grid2 {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1vh;
-  font-size:1.1rem;
+  font-size: 1.1rem;
+  padding: auto;
 }
 
 @media screen and (max-width: 600px) {
