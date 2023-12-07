@@ -188,7 +188,7 @@ a:hover {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   gap: 1vh;
-  font-size:1.1rem;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -229,6 +229,19 @@ a:hover {
   float: center;
 }
 
+.image-product:hover {
+  animation-name: enlarge;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes enlarge {
+  100% {
+    transform: scale(1.05);
+  }
+}
+
 @media screen and (min-width: 600px) {
   .products {
     display: grid;
@@ -262,6 +275,11 @@ a:hover {
   padding: 2rem;
 }
 
+.title-product {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
 .product-text {
   color: #603423;
   font-family: "Noto Sans";
@@ -290,10 +308,6 @@ footer {
   .grid-footer {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.title-product {
-  padding-left: 2rem;
 }
 
 .footer-pics {
