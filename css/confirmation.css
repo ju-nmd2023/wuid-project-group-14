@@ -19,28 +19,52 @@ h1 {
   padding: 3rem;
 }
 
-.li-nav{
+#tick-icon {
+  animation-name: appearance-animation, color-change-animation;
+  animation-duration: 3s, 3s;
+  animation-fill-mode: forwards, forwards;
+}
+
+@keyframes appearance-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes color-change-animation {
+  0% {
+    color: #fff;
+  }
+  100% {
+    color: #87BD5C;
+  }
+}
+
+.li-nav {
   margin: 30px 0 0 0;
   padding: 0 0 0 30px;
   font-size: 16px;
   color: #ded5cb;
 }
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
   text-align: center;
   justify-content: center;
-  
 }
 
 @media screen and (max-width: 980px) {
   header {
     font-size: 2rem;
   }
-
 }
 
 h3 {
@@ -73,7 +97,6 @@ h4 {
   padding-left: 1.2rem;
   padding-top: 1rem;
   margin-left: 1rem;
-  
 }
 
 .image-logo-navbar {
