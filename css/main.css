@@ -273,7 +273,7 @@ a:hover {
 #our-products {
   color: #603423;
   font-family: "Noto Sans";
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: normal;
   padding: 2rem;
 }
@@ -284,10 +284,18 @@ a:hover {
 }
 
 .product-text {
-  color: #603423;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(81, 76, 76, 0.7); /* Adjust the background color and opacity */
+  padding: 10px;
+  text-align: center;
   font-family: "Noto Sans";
-  font-size: 1.2rem;
-  margin-left: 1rem;
+  font-size: 1.5rem;
+  line-height: normal;
+  width: 80%; /* Adjust the width as needed */
 }
 
 /*Footer*/
