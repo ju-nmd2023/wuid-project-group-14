@@ -248,6 +248,10 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
+  .product-text {
+    margin-top: 1rem;
+  }
 }
 
 #our-products {
@@ -256,6 +260,13 @@ a:hover {
   font-size: 1rem;
   line-height: normal;
   padding: 2rem;
+}
+
+.product-text {
+  color: #603423;
+  font-family: "Noto Sans";
+  font-size: 1.2rem;
+  margin-left: 1rem;
 }
 
 /*Footer*/
