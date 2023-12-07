@@ -10,7 +10,7 @@ body {
 /* Header */
 .header {
   flex-direction: column;
-  font-size: 30px;
+  font-size: 1.9rem;
   font-size: 1.8rem;
   text-align: left;
   font-family: "Noto Sans";
@@ -33,7 +33,7 @@ body {
 .li-nav {
   margin: 30px 0 0 0;
   padding: 0 0 0 30px;
-  font-size: 16px;
+  font-size: 1rem;
   color: #ded5cb;
 }
 
@@ -228,14 +228,15 @@ a:hover {
 
 .image-product:hover {
   animation-name: enlarge;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
+  animation-delay: 0s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes enlarge {
   100% {
-    transform: scale(1.05);
+    transform: scale(1.08);
   }
 }
 
@@ -248,7 +249,7 @@ a:hover {
   }
 
   .image-product {
-    width: 100%;
+    width: 95%;
     margin: 0;
   }
 
@@ -277,7 +278,7 @@ a:hover {
   color: #ffffff;
   padding: 10px;
   font-family: "Noto Sans";
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: normal;
   text-align: center;
 }
