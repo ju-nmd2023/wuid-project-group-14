@@ -85,8 +85,12 @@ h4{
   width: 20%;
   float: left;
   display: block;
-  padding-left: 2px;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+  margin-left: 1rem;
+  
 }
+
 
 li,
 a {
@@ -114,7 +118,6 @@ a:hover {
   font-family: "Noto Sans";
   cursor: pointer;
 }
-
 .welcome-style {
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -124,7 +127,7 @@ a:hover {
       rgba(96, 52, 35, 0) 97.97%
     ),
     url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
-  height: 800px;
+  height: 50rem;
 }
 
 /*Footer*/
