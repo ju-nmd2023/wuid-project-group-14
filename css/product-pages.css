@@ -101,12 +101,13 @@ section {
   margin-right: 15px;
 }
 
-.image-productpage:hover {
+.coffee:hover {
   animation-name: enlarge-1;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
+
 
 @keyframes enlarge-1 {
   from {
@@ -116,6 +117,7 @@ section {
     transform: scale(1.1);
   }
 }
+
 
 h2,
 h3,
