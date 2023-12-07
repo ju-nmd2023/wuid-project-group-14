@@ -11,6 +11,7 @@ body {
 /* Header */
 .header {
   flex-direction: column;
+  font-size: 30px;
   font-size: 1.8rem;
   text-align: left;
   font-family: "Noto Sans";
@@ -18,6 +19,7 @@ body {
   font-style: normal;
   font-weight: 400;
   margin: 0 0 0 0;
+  padding: 120px 70px 0 70px;
   padding: 7.5rem 4.3rem 0 4.3rem;
 }
 
@@ -43,18 +45,7 @@ body {
   margin: 0 0 0 0;
 }
 
-.image-product {
-  width: 80%;
-  height: 60%;
-  padding-left: 2px;
-  margin-right: 15px;
-  border-radius: 15px;
-  float: center;
-}
 
-.overlap-text{
-  margin-bottom: 20px;
-}
 
   ul {
     margin: 0 0 0 0;
@@ -234,6 +225,37 @@ a:hover {
   gap: 1vh;
 }
 
+.image-product {
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  padding-left: 2px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  float: center;
+}
+
+@media screen and (min-width: 600px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 1vh;
+  }
+
+  .image-product {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+}
+}
+
 #our-products {
   color: #603423;
   font-family: "Noto Sans";
@@ -242,34 +264,6 @@ a:hover {
   padding: 2rem;
 }
 
-@media screen and (min-width: 600px) {
-  .products {
-    flex-direction: column;
-    display: grid;
-  }
-
-  .image-product.fit {
-    display: block;
-    margin: 0 0 2rem 0;
-    width: 60%;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3vh;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .products {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3vh;
-  }
-}
 
 /*Footer*/
 footer {
