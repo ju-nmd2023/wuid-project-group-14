@@ -11,40 +11,50 @@ body {
 /* Header */
 .header {
   flex-direction: column;
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: left;
   font-family: "Noto Sans";
   color: #fff;
   font-style: normal;
   font-weight: 400;
   margin: 0 0 0 0;
-  padding: 120px 70px 0 70px;
+  padding: 7.5rem 4.3rem 0 4.3rem;
+}
+
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+.li-nav{
+  margin: 30px 0 0 0;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  color: #ded5cb;
 }
 
 body {
   margin: 0 0 0 0;
 }
 
-@media screen and (max-width: 520px) {
-  .first-nav {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2vh;
-  }
-}
 
-@media screen and (max-width: 980px) {
-  header {
-    font-size: 20px;
-  }
+.overlap-text{
+  margin-bottom: 20px;
+}
 
   ul {
     margin: 0 0 0 0;
   }
-}
+
 
 .navbar-secondary {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -56,29 +66,33 @@ body {
 
 .ul-navbar {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   float: right;
 }
 
 .header h3 {
   color: #fff;
   font-family: Noto Sans;
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 1.75rem;
   line-height: normal;
 }
 
-.button-buy {
-  font-size: 18px;
+
+
+@media screen and (min-width: 200px) {
+  .button-buy {
+  font-size: 1.125rem;
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   color: #fff;
   background-color: transparent;
   text-decoration: none;
-  border: 2px solid #fff;
+  border: 0.125rem solid #fff;
   cursor: pointer;
-  margin-right: 490px;
+  margin-right: 8rem;
+  }
+  
 }
 
 .button-buy:hover {
@@ -92,21 +106,24 @@ h4,
 h5,
 h6 {
   color: #787878;
-  font-weight: 16px;
-  line-height: 1em;
-  margin: 0 0 1em 0;
+  font-weight: 1rem;
+  line-height: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .image-logo {
   width: 20%;
   float: left;
   display: block;
-  padding-left: 2px;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+  margin-left: 1rem;
+  
 }
 
 .image-logo-navbar {
-  margin-left: 20px;
-  width: 20%;
+  margin-left: 1.25rem;
+  width: 25%;
   float: left;
 }
 
@@ -117,7 +134,7 @@ a {
   color: #ded5cb;
   text-decoration: none;
   font-family: "Noto Sans";
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 a:hover {
@@ -126,15 +143,15 @@ a:hover {
 
 .text {
   flex: 1 0 0;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.3rem;
+  border-style: none;
+  background: rgba(40, 27, 27, 0.6);
   align-items: center;
-  padding: 2px;
+  padding: 0.3rem;
   color: #fff;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
+  font-size: 0.9rem;
   font-family: "Noto Sans";
+  cursor: pointer;
 }
 
 .welcome-style {
@@ -146,7 +163,7 @@ a:hover {
       rgba(96, 52, 35, 0) 97.97%
     ),
     url("../images/background.jpg"), lightgray 50% / cover no-repeat; /*for this line we used the css */
-  height: 800px;
+  height: 50rem;
 }
 
 /* About us Section */
@@ -166,20 +183,19 @@ a:hover {
   width: 70%;
   float: left;
   display: flex;
-  padding-left: 60px;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  padding-right: 50px;
+  padding-left: 3.75rem;
+  padding-top: 5rem;
+  padding-bottom: 2.125rem;
+  padding-right: 3.125rem;
 }
 #about-subtitle {
   grid-column: 2 / 3;
   display: flex;
   color: #603423;
   font-family: "Noto Sans";
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: normal;
-  font-weight: 700;
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 .sub-grid2 {
@@ -192,43 +208,62 @@ a:hover {
   grid-column: 1 / 2;
   color: #603423;
   font-family: "Noto Sans";
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 #about-p2 {
   grid-column: 2 / 3;
   color: #603423;
   font-family: "Noto Sans";
-  padding-right: 40px;
+  padding-right: 2.5rem;
 }
 
 /* Products Section */
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3vh;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 1.25rem;
+  gap: 1vh;
 }
 
 #our-products {
   color: #603423;
   font-family: "Noto Sans";
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 1rem;
   line-height: normal;
   padding: 2rem;
 }
 
+
 .image-product {
+  width: 80%;
+  height: 70%;
+  margin: 0 auto; /* Center the image within its column */
+  padding-left: 2px;
+  margin-bottom: 15px;
   border-radius: 15px;
-  width: 100%;
-  height: 60%;
-  padding: 0 0 0 0;
+  float: center;
 }
 
-.image-product.fit {
-  display: block;
-  margin: 0 0 2em 0;
-  width: 100%;
+@media screen and (min-width: 600px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr; /* Change to one column */
+    gap: 1vh;
+  }
+
+  .image-product {
+    width: 100%; /* Adjust the width for larger screens */
+    margin-bottom: 0; /* Add some spacing between the columns */
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
 }
 
 /*Footer*/
@@ -244,8 +279,8 @@ footer {
   margin-top: auto;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 20px;
-  gap: 30px;
+  padding: 1.25rem;
+  gap: 1.875rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -259,11 +294,11 @@ footer {
 }
 
 .footer-pics {
-  width: 10%;
+  width: 12%;
   padding-bottom: 0rem;
 }
 
 .footer-media {
-  width: 5%;
+  width: 8%;
   padding-left: 0.5rem;
 }
