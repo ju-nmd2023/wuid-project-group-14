@@ -17,8 +17,24 @@ body {
   color: #fff;
   font-style: normal;
   margin: 0 0 0 0;
-  padding: 120px 70px 0 70px;
-  padding: 7.5rem 4.3rem 0 4.3rem;
+  padding: 7.5rem 4.3rem 0 6rem;
+}
+
+.header:hover {
+  animation-name: enlarge;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes enlarge {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+  }
 }
 
 .navbar {
@@ -170,11 +186,15 @@ a:hover {
   width: 60%;
   float: left;
   display: flex;
-  padding-left: 3.75rem;
+  padding-left: 5rem;
   padding-top: 3rem;
   padding-bottom: 2.125rem;
   padding-right: 3.125rem;
+  animation-name: enlarge;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
+
 #about-subtitle {
   display: flex;
   color: #603423;
@@ -182,6 +202,10 @@ a:hover {
   font-size: 1.875rem;
   font-style: normal;
   padding-right: 2.5rem;
+}
+
+.sub-grid{
+  padding-right: 1rem;
 }
 
 .sub-grid2 {
