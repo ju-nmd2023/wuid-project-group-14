@@ -11,6 +11,19 @@ input {
   color: #603423;
 }
 
+.text-white {
+  flex: 1 0 0;
+  border-radius: 0.3rem;
+  border-style: none;
+  background: rgba(147, 143, 143, 0.6);
+  align-items: center;
+  padding: 0.3rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: "Noto Sans";
+  cursor: pointer;
+}
+
 h1 {
   margin-left: 30px;
   padding-top: 20px;
