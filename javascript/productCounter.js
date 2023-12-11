@@ -55,8 +55,8 @@ function changeAmount(amountToChange, productIndex, i) {
             productCounterAmount.value = amount - 1;
             prices[i].textContent = newPrice + " SEK";
         } else { // prevents a negative amount of products
-            productCounterAmount.value = 1;
-            prices[i].textContent = initialPrices[productIndex] + " SEK";
+            productCounterAmount.value = 0;
+            prices[i].textContent = "0 SEK";
         }
     }
 
