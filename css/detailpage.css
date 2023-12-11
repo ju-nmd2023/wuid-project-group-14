@@ -18,7 +18,6 @@ input {
 }
 
 .text-white {
-  flex: 1 0 0;
   border-radius: 0.3rem;
   border-style: none;
   background: rgba(147, 143, 143, 0.6);
@@ -164,7 +163,6 @@ input {
 .cart-product-price {
   font-family: Noto Sans;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   color: #603423;
 }
@@ -191,7 +189,6 @@ input {
   font-size: 20px;
   text-align: left;
   font-family: "Crimson Text";
-  font-weight: 400;
 }
 
 /* Styling for the buttons */
@@ -258,7 +255,6 @@ input {
   font-family: Poppins;
   font-size: 25px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
 }
 
@@ -275,7 +271,6 @@ input {
   font-family: Poppins;
   font-size: 30px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
 }
 
@@ -287,7 +282,6 @@ input {
   font-family: Noto Sans;
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
 }
 
@@ -435,7 +429,6 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   font-family: Poppins;
   font-size: 15px;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   cursor: pointer;
 }
@@ -448,7 +441,6 @@ https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-bei
   text-align: center;
   font-family: Poppins;
   font-style: normal;
-  font-weight: 600;
   line-height: normal;
   background: #a26c40;
   color: #fff;
@@ -479,7 +471,6 @@ https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-
   text-align: left;
   font-family: Noto Sans;
   font-style: normal;
-  font-weight: 500;
   line-height: normal;
   color: white;
 }

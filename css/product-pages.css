@@ -3,16 +3,15 @@
 /* Headers and text */
 
 li,
-a,
-input {
+a {
   margin: 0 10px 0 0;
   padding: 0 0 0 0;
   font-size: 1rem;
   color: #603423;
 }
 
+
 .text-white {
-  flex: 1 0 0;
   border-radius: 0.3rem;
   border-style: none;
   background: rgba(147, 143, 143, 0.6);
@@ -47,18 +46,6 @@ h4 {
 
 /* Search button */
 
-.text-white {
-  flex: 1 0 0;
-  border-radius: 0.3rem;
-  border-style: none;
-  background: rgba(147, 143, 143, 0.6);
-  align-items: center;
-  padding: 0.3rem;
-  color: #fff;
-  font-size: 0.9rem;
-  font-family: "Noto Sans";
-  cursor: pointer;
-}
 
 /* Back arrow button */
 
