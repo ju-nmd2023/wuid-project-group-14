@@ -20,6 +20,13 @@ body {
   padding: 7.5rem 4.3rem 0 4.3rem;
 }
 
+.header h3 {
+  color: #fff;
+  font-family: Noto Sans;
+  font-size: 1.75rem;
+  line-height: normal;
+}
+
 .header:hover {
   animation-name: enlarge;
   animation-duration: 0.5s;
@@ -28,6 +35,7 @@ body {
   animation-timing-function: ease-in-out;
 }
 
+/*animation for header to enlarge in hover*/
 @keyframes enlarge {
   from {
     transform: scale(1);
@@ -37,6 +45,8 @@ body {
   }
 }
 
+
+/*navbar style*/
 .navbar {
   display: flex;
   flex-direction: row;
@@ -53,12 +63,26 @@ body {
   color: #ded5cb;
 }
 
-
-
 ul {
   margin: 0 0 0 0;
 }
 
+.image-logo {
+  width: 20%;
+  float: left;
+  display: block;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.image-logo-navbar {
+  margin-left: 1.25rem;
+  width: 25%;
+  float: left;
+}
+
+/*css for navbar in products page (it just changes the background color)*/
 .navbar-secondary {
   display: flex;
   flex-direction: row;
@@ -76,13 +100,7 @@ ul {
   float: right;
 }
 
-.header h3 {
-  color: #fff;
-  font-family: Noto Sans;
-  font-size: 1.75rem;
-  line-height: normal;
-}
-
+/*responsiveness for button buy for screen widther than 200*/
 @media screen and (min-width: 200px) {
   .button-buy {
     font-size: 1.125rem;
@@ -112,21 +130,7 @@ h6 {
   margin: 0 0 1rem 0;
 }
 
-.image-logo {
-  width: 20%;
-  float: left;
-  display: block;
-  padding-left: 1.2rem;
-  padding-top: 1rem;
-  margin-left: 1rem;
-}
-
-.image-logo-navbar {
-  margin-left: 1.25rem;
-  width: 25%;
-  float: left;
-}
-
+/*style for list and anchor element for the website*/
 li,
 a {
   display: inline;
@@ -141,6 +145,7 @@ a:hover {
   color: #c0a470;
 }
 
+/*style for the search bar in navegation*/
 .text {
   border-radius: 0.3rem;
   border-style: none;
@@ -153,7 +158,7 @@ a:hover {
 }
 
 
-
+/*background style for main welcome page*/
 .welcome-style {
   background-image: url("../images/background.jpg");
   background-size: cover;
@@ -189,6 +194,7 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
+/*goes in the second column of the first grid*/
 #about-subtitle {
   display: flex;
   color: #603423;
@@ -198,10 +204,11 @@ a:hover {
   padding-right: 2.5rem;
 }
 
+/*right grid of the main grid*/
 .sub-grid{
   padding-right: 1rem;
 }
-
+/*smaller grid for the 2 paragraphs*/
 .sub-grid2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -210,6 +217,7 @@ a:hover {
   padding: auto;
 }
 
+/*responsive for ABOUT US when the screen is less than 600px the paragraohs go into 1 column*/
 @media screen and (max-width: 600px) {
   .sub-grid2 {
     display: grid;
@@ -217,7 +225,7 @@ a:hover {
     gap: 1vh;
   }
 }
-
+/*style of the 2 paragraphs*/
 #about-p1 {
   color: #603423;
   font-family: "Noto Sans";
@@ -230,6 +238,9 @@ a:hover {
   padding-right: 2.5rem;
 }
 
+
+
+/*responsiveness for ABOUT US grid when is larger than 600px it goes into the 2 columns*/
 @media screen  and (min-width: 600px) {
   #About-Us {
     display: grid;
@@ -239,6 +250,7 @@ a:hover {
     background-size: cover;
   }
 
+  /*the logo goes into the first column on the left (1-2) | 2-3*/
   #about-logo {
     grid-column: 1 / 2;
   }
@@ -306,14 +318,15 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
+/*animation for the hover of the products*/
 @keyframes enlarge {
   100% {
     transform: scale(1.08);
   }
 }
 
-
-@media screen and (min-width: 600px) {
+/*responsiveness for PRODUCTS when is smaller than 600px it goes into 1 column*/
+@media screen and (max-width: 600px) {
   .products {
     display: grid;
     grid-template-columns: 1fr;
@@ -326,12 +339,16 @@ a:hover {
   }
 
 }
-
+/*responsiveness for PRODUCTS when is larger than 700px it goes into 3 columns*/
 @media screen and (min-width: 700px) {
   .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; /* changed it to rem so it can be  */
+    gap: 2rem; 
+  }
+  .image-product {
+    width: 95%;
+    margin: 0;
   }
 }
 
@@ -364,6 +381,7 @@ footer {
   width: 100%;
 }
 
+/*responsiveness when the screen is NOT larger than 600px it goes into 1 column*/
 .grid-footer {
   margin-top: auto;
   display: grid;
@@ -372,6 +390,7 @@ footer {
   gap: 1.875rem;
 }
 
+/*responsiveness when the screen is larger than 600px it goes into 3 columns*/
 @media screen and (min-width: 600px) {
   .grid-footer {
     grid-template-columns: repeat(3, 1fr);
